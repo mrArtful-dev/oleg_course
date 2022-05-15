@@ -1,15 +1,11 @@
-isikukood = input("Please enter ID: ")
-if len(isikukood) == 11:
-    print('ID is OK')
-elif len(isikukood) > 11:
-    print('ID is too long')
-else:
-    print('ID is too short')
+user_input = input('Please choose\n'
+                   '1.Print hello\n'
+                   '2.Print world\n'
+                   '--> ')
 
-if len(isikukood) != 11:
-    if len(isikukood) > 11:
-        print('ID is too long')
-    else:
-        print('ID is too short')
+if user_input == '1':
+    print('Hello')
+elif user_input == '2':
+    print('World')
 else:
-    print('ID is OK')
+    print('Choice is out of range')
