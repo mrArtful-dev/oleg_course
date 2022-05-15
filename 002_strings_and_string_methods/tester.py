@@ -13,4 +13,3 @@ if len(isikukood) != 11:
         print('ID is too short')
 else:
     print('ID is OK')
-asdsa
