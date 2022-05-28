@@ -1,19 +1,7 @@
-while True:
-    try:
-        user_input = input('Please enter you ID (type exit to quit): ')
-        if user_input.lower() == 'exit':
-            break
-        int(user_input)
-        if len(user_input) != 11:
-            if len(user_input) > 11:
-                print('ID is too long!')
-            else:
-                print('ID is too short!')
-            raise UserWarning
-    except ValueError:
-        print('ID you entered is not numeric!')
-    except UserWarning:
-        print('ID you entered is not 11 digits long')
+people = [['Jack', 'Smith', 35, 'male'], ['Mary', 'Gold', 25, 'female'], ['Bob', 'Summer', 15, 'male']]
+
+for person in people:
+    if person[3] == 'male':
+        print(f'This is {person[0]} {person[1]}. He is {person[2]} years old.')
     else:
-        print(user_input)
-        break
+        print(f'This is {person[0]} {person[1]}. She is {person[2]} years old.')
